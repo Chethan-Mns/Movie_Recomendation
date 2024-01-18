@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Movie Recommendation System</h1>
+        <p>Discover movies based on your emotions!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>How it Works</h2>
+            <p>
+                Select an emotion from the dropdown menu, and our system will recommend movies that match your mood.
+            </p>
+        </section>
+
+        <section>
+            <h2>Emotions</h2>
+            <p>
+                Choose from a variety of emotions such as Sad, Disgust, Anger, Anticipation, Fear, Enjoyment, Trust, and Surprise.
+            </p>
+        </section>
+
+        <section>
+            <h2>Get Started</h2>
+            <center><form action="/recommend" method="post" style="width: 500px;">
+                <label for="emotion">Select Emotion:</label>
+                <select name="emotion" id="emotion">
+                    <option value="Sad">Sad</option>
+                    <option value="Disgust">Disgust</option>
+                    <option value="Anger">Anger</option>
+                    <option value="Anticipation">Anticipation</option>
+                    <option value="Fear">Fear</option>
+                    <option value="Enjoyment">Enjoyment</option>
+                    <option value="Trust">Trust</option>
+                    <option value="Surprise">Surprise</option>
+                </select><br><br>
+                <button type="submit">Recommend Movies</button>
+            </form></center>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Movie Recommendation System</p>
+    </footer>
+</body>
+</html>

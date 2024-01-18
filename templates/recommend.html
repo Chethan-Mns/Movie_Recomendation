@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations for {{ emotion }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Movie Recommendations</h1>
+        <p>Here are some movie recommendations based on your emotion: {{ emotion }}</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Recommended Movies</h2>
+            <ul>
+                {% for movie in movies %}
+                    <li>{{ movie }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Movie Recommendation System</p>
+    </footer>
+</body>
+</html>
