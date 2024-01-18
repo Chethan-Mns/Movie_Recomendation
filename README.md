@@ -10,7 +10,7 @@ Welcome to the Movie Recommendation System! This web application recommends movi
 - Flask (`pip install flask`)
 - tmdbv3api (`pip install tmdbv3api`)
 
-### Installation
+## Installation
 
 1. **Clone the repository:**
 
