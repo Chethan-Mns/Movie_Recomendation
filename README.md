@@ -49,4 +49,3 @@ This project is licensed under the MIT License.
 - Flask
 - tmdbv3api
   
-Feel free to customize this README file based on your specific project details and needs. Replace placeholders such as your-username and YOUR_TMDB_API_KEY with your actual information.
